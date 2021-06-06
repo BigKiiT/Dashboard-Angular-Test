@@ -1,0 +1,93 @@
+<section id="main_monitoring">
+    <div class="inner">
+        <div class="txt_head">Dashboard</div>
+        <div class="txt_station">Control center room</div>
+        <div class="box_list_server">
+            <div class="item width_70">
+                <div class="content">
+                    <div class="txt_name">Server 1</div>
+                    <div class="list_hw">
+                        <div class="chart_cpu">
+                            <div class="content_hw">
+                                <div class="txt_type">CPU</div>
+                                <app-chart-monitoring></app-chart-monitoring>
+                            </div>
+                        </div>
+                        <div class="chart_cpu">
+                            <div class="content_hw">
+                                <div class="txt_type">GPU</div>
+                                <app-chart-monitoring></app-chart-monitoring>
+                            </div>
+                        </div>
+                        <div class="chart_cpu">
+                            <div class="content_hw">
+                                <div class="txt_type">RAM</div>
+                                <app-chart-monitoring></app-chart-monitoring>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="txt_name">Server 2</div>
+                    <div class="list_hw">
+                        <div class="chart_cpu">
+                            <div class="content_hw">
+                                <div class="txt_type">CPU</div>
+                                <app-chart-monitoring></app-chart-monitoring>
+                            </div>
+                        </div>
+                        <div class="chart_cpu">
+                            <div class="content_hw">
+                                <div class="txt_type">GPU</div>
+                                <app-chart-monitoring></app-chart-monitoring>
+                            </div>
+                        </div>
+                        <div class="chart_cpu">
+                            <div class="content_hw">
+                                <div class="txt_type">RAM</div>
+                                <app-chart-monitoring></app-chart-monitoring>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="txt_name">Server 3</div>
+                    <div class="list_hw">
+                        <div class="chart_cpu">
+                            <div class="content_hw">
+                                <div class="txt_type">CPU</div>
+                                <app-chart-monitoring></app-chart-monitoring>
+                            </div>
+                        </div>
+                        <div class="chart_cpu">
+                            <div class="content_hw">
+                                <div class="txt_type">GPU</div>
+                                <app-chart-monitoring></app-chart-monitoring>
+                            </div>
+                        </div>
+                        <div class="chart_cpu">
+                            <div class="content_hw">
+                                <div class="txt_type">RAM</div>
+                                <app-chart-monitoring></app-chart-monitoring>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item width_30">
+                <div class="box_list_station">
+                    <div class="list_station">
+                        <div class="txt_name">รายชื่อสถานที่</div>
+                        <div class="content_station" *ngFor="let v of dataStation; let i=index" >
+                            <div class="txt_list_station">{{ i+1+"." }} {{ v.name }}</div>
+                            <em class="ic {{ v.status }}"></em>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

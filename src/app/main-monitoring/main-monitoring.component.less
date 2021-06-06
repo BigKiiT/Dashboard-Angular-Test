@@ -1,0 +1,144 @@
+#main_monitoring{
+    .inner{
+        width: 100%;
+        padding: 40px 40px;
+        margin: auto;
+    }
+    .txt_head{
+        color: white;
+        font-size: 40px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    .txt_station{
+        color: white;
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    .txt_name{
+        color: white;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .txt_type{
+        color: black;
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+    .txt_list_station{
+        color: white;
+        font-size: 18px;
+    }
+    .box_list_server{
+        display: flex;
+        flex-wrap: wrap;
+        .item{
+            &.width_70{
+                width: 70%;
+            }
+            &.width_30{
+                width: 30%;
+            }
+            .content{
+                background-color: rgba(11, 11, 102, 0.9);
+                padding: 10px 20px;
+                border-radius: 6px;
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .list_hw{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px -10px;
+        .chart_cpu{
+            width: 33.333%;
+            padding: 0px 10px;
+            margin-bottom: 10px;
+            .content_hw{
+                color: #242424;
+                border-radius: 6px;
+                background-color: rgb(255, 255, 255);
+                height: 100%;
+                padding: 10px;
+                padding-bottom: 0px;
+            }
+        }
+    }
+    .box_list_station{
+        cursor: pointer;
+        height: auto;
+        // height: calc(~'100vh - 136px');
+        margin-left: 20px;
+        width: calc(~'100% - 20px');
+        background-color: rgba(11, 11, 102, 0.9);
+        border-radius: 6px;
+        .list_station{
+            padding: 20px;
+            .content_station{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                padding: 10px 10px;
+                border-radius: 6px;
+                background-color: rgba(5, 5, 68, 0.473);
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .ic{
+        &.ON{
+            background-image: url(../../assets/image/success.svg);
+            vertical-align: middle;
+            display: inline-block;
+            height: 29px;
+            width: 27px;
+        }
+        &.OFF{
+            background-image: url('../../assets/image/cancel.svg');
+            vertical-align: middle;
+            display: inline-block;
+            height: 27px;
+            width: 27px;
+        }
+    }
+}
+@media (max-width: 1000px){
+    #main_monitoring{
+        .inner{
+            padding: 20px 20px;
+        }
+        .txt_head{
+            font-size: 30px;
+            margin-bottom: 0px;
+        }
+        .txt_station{
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        .box_list_server{
+            display: flex;
+            flex-wrap: wrap;
+            .item{
+                &.width_70{
+                    width: 100%;
+                }
+                &.width_30{
+                    width: 100%;
+                }
+            }
+        }
+        .box_list_station{
+            width: 100%;
+            margin-left: 0px;
+        }
+    }
+}
+@media (max-width: 767px){
+    
+}
